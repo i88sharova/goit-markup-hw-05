@@ -147,14 +147,14 @@ body {
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
-.name-futer-span {
+.name-futter-span {
   color: #f4f4fd;
 }
-.color-text-futer {
+.color-text-futter {
   color: #f4f4fd;
   max-width: 264px;
 }
-.info-futer {
+.info-futter {
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -243,7 +243,7 @@ ul {
 .name-prof {
   padding: 32px 0;
 }
-.logo-futer {
+.logo-futter {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 0;
@@ -352,10 +352,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.futer-soc-meregi {
+.futter-soc-meregi {
   margin-right: 120px;
 }
-.futer-soc-text {
+.futter-soc-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -363,19 +363,19 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.futer-soc-link {
+.futter-soc-link {
   display: flex;
   gap: 16px;
 }
-.futer-state {
+.futter-state {
   display: flex;
   align-items: baseline;
 }
 .parag-logo {
   margin-right: 120px;
 }
-.futer-link:hover,
-.futer-link:focus {
+.futter-link:hover,
+.futter-link:focus {
   background-color: #31d0aa;
 }
 .backdrop {
@@ -537,4 +537,39 @@ color: var(--LIGHT-SLATE, #8E8F99);
 }
 .rewiew-form-ch-box-wr{
   margin-bottom: 24px;
+}
+.futter-form-input{
+  width: 264px;
+  height: 40px;
+  background: var(--NAVY-BLUE, #2E2F42);
+border-radius: 4px;
+border: 1px solid var(--WHITE, #FFF);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+}
+.futter-form-input::placeholder{
+  color: #ffffff;
+}
+.futter-email-wr{
+  display: flex;
+  gap: 24px;
+}
+.btn-scrb {
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  justify-content: center; 
+  align-items: center;
+}
+.futter-form-icon {
+  margin-left: 16px; 
+  fill:#ffffff;
 }
