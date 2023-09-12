@@ -386,9 +386,10 @@ img {
   top: 0;
   left: 0;
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-  opacity: 0;
+opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .backdrop.is-open{
@@ -409,9 +410,16 @@ img {
   padding-left: 24px;
   border-radius: 4px;
 background-color: var(--DAIRY, #FCFCFC);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn{
+  display: flex;
   position: absolute;
+  align-items: center; 
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   line-height: 0;
   width: 24px;
@@ -420,9 +428,7 @@ border-radius: 50%;
 top: 24px;
 right: 24px;
 cursor: pointer;
-border: 1px;
-border-color: rgba(0, 0, 0, 0.10);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .close-btn:hover, .close-btn:focus {
   background-color: var(--OCEAN, #404BBF);
@@ -443,6 +449,7 @@ line-height: 1.5; /* 150% */
 letter-spacing: 0.02em;
 align-items: center;
 margin-bottom: 16px;
+color: #2E2F42;
 }
 .rewiew-form-label{
   display: block;
@@ -450,7 +457,7 @@ margin-bottom: 16px;
   margin-top: 8px;
   font-size: 12px;
 font-weight: 400;
-line-height: 1,7; /* 116.667% */
+line-height: 1,17; 
 letter-spacing: 0.04em;
 color: var(--LIGHT-SLATE, #8E8F99);
 }
@@ -458,9 +465,11 @@ color: var(--LIGHT-SLATE, #8E8F99);
   width: 100%;
   height: 40px;
   border-radius: 4px;
+  background-color: transparent;
 border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 40px;
+  padding-left: 38px;
+  outline: transparent;
 
 }
 .rewiew-form-input:focus {
@@ -514,7 +523,7 @@ border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
   cursor: pointer;
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)?;
   margin-right: 8px;
 
 }
@@ -535,8 +544,11 @@ color: var(--LIGHT-SLATE, #8E8F99);
 .privasy-policy-link {
   color:#4D5AE5 ;
 }
+.rewiew-form-fild-wr{
+  margin-bottom: 8px;
+}
 .rewiew-form-ch-box-wr{
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 .futter-form-input{
   width: 264px;
